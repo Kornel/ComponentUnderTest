@@ -1,9 +1,12 @@
 ComponentUnderTest
 ==================
 
-ComponentUnderTest creates the mocks in your tests for you!
+ComponentUnderTest creates the mocks in your tests for you! For a running example **clone this project and launch:** 
+```
+src/test/java/org/kornel/testing/it/ComponentUnderTestRuleIntegrationTest.java
+```
 
-Ever got tired of manually specifing mocks for your components under test? Imagine a business component:
+Ever got tired of manually specifying mocks for your components under test? Imagine a business component:
 
 ```java
 @Component
@@ -79,7 +82,7 @@ public class BusinessProcessorTest extends TestBase {
 
 The dependencies are mocked automatically for you! This is **accomplished by**:
 
- - A JUnit rule which scans for a *ComponentUnderTest* object in your tests
+ - A JUnit rule which scans for a *ComponentUnderTest* object in your tests (defined in TestBase in this examples)
  - The object is then scanned for fields annotated with a specific annotation (e.g. *@Inject* or *@Autowired*)                                       
  - The fields are mocked using e.g. *Mockito.mock*                                                                                       
 
