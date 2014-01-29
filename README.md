@@ -1,10 +1,16 @@
-ComponentUnderTest
-==================
+Easier mocking of dependencies
+===============================
 
-ComponentUnderTest creates the mocks in your tests for you! For a running example **clone this project and launch:** 
+Quickstart
+----------
+
+ComponentUnderTest creates the mocks in your tests for you! For a running example to see yourself **clone this project and launch:** 
 ```
 src/test/java/org/kornel/testing/it/ComponentUnderTestRuleIntegrationTest.java
 ```
+
+So, what is this all about?
+--------------------------
 
 Ever got tired of manually specifying mocks for your components under test? Imagine a business component:
 
